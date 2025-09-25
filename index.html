@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Web Pekanbaru - Profesional Web Development Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',     /* Biru utama */
+                        secondary: '#3B82F6',   /* Biru muda */
+                        accent: '#60A5FA',      /* Biru terang */
+                        dark: '#1D4ED8',        /* Biru tua */
+                        light: '#EFF6FF',       /* Biru sangat muda */
+                        'text-dark': '#1F2937',  /* Abu gelap */
+                        'gradient-start': '#0EA5E9', /* Cyan untuk gradient */
+                        'gradient-end': '#6366F1'   /* Indigo untuk gradient */
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light text-text-dark font-inter">
+    <!-- Header -->
+    <header class="bg-primary text-white p-4 md:p-6 fixed w-full z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-bold flex items-center">
+                <i class="fas fa-globe mr-2"></i>
+                Jasa Web Pekanbaru
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4 md:space-x-6">
+                    <li><a href="#beranda" class="hover:text-gradient-start transition-colors">Beranda</a></li>
+                    <li><a href="#layanan" class="hover:text-gradient-start transition-colors">Layanan</a></li>
+                    <li><a href="#tentang" class="hover:text-gradient-start transition-colors">Tentang</a></li>
+                    <li><a href="#tim" class="hover:text-gradient-start transition-colors">Tim</a></li>
+                    <li><a href="#kontak" class="hover:text-gradient-start transition-colors">Kontak</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+            <ul class="flex flex-col space-y-3">
+                <li><a href="#beranda" class="hover:text-gradient-start transition-colors block py-2">Beranda</a></li>
+                <li><a href="#layanan" class="hover:text-gradient-start transition-colors block py-2">Layanan</a></li>
+                <li><a href="#tentang" class="hover:text-gradient-start transition-colors block py-2">Tentang</a></li>
+                <li><a href="#tim" class="hover:text-gradient-start transition-colors block py-2">Tim</a></li>
+                <li><a href="#kontak" class="hover:text-gradient-start transition-colors block py-2">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="py-20 md:py-32 bg-gradient-to-r from-gradient-start to-gradient-end text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Jasa Pembuatan Website Profesional di Pekanbaru</h1>
+                    <p class="text-lg md:text-xl mb-8">Penyedia jasa pembuatan website, desain, aplikasi, SEO, blog dengan harga bersaing dan kualitas terjamin</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-gradient-start px-8 py-3 rounded-lg font-semibold hover:bg-accent transition-colors transform hover:-translate-y-1 active:translate-y-0 shadow-lg">
+                            Hubungi Kami
+                        </button>
+                        <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gradient-start transition-colors">
+                            Lihat Portfolio
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Web Development" class="rounded-lg shadow-2xl animate-float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-16 bg-gradient-to-br from-light to-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gradient-start mb-4">Tentang Kami</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-gradient-start to-gradient-end mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1" data-aos="fade-right">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl h-full">
+                            <h3 class="text-2xl font-bold text-gradient-start mb-6">Mengapa Memilih Kami?</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end flex items-center justify-center">
+                                            <i class="fas fa-check text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold mb-1">Pengalaman Lebih dari 8 Tahun</h4>
+                                        <p class="text-gray-600 text-sm">Telah melayani ratusan klien dengan berbagai kebutuhan digital di Pekanbaru dan sekitarnya.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end flex items-center justify-center">
+                                            <i class="fas fa-check text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold mb-1">Tim Profesional & Berdedikasi</h4>
+                                        <p class="text-gray-600 text-sm">Didukung oleh tim ahli yang kompeten di bidangnya masing-masing untuk memberikan hasil terbaik.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end flex items-center justify-center">
+                                            <i class="fas fa-check text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold mb-1">Harga Terjangkau & Kualitas Premium</h4>
+                                        <p class="text-gray-600 text-sm">Menawarkan solusi digital dengan harga kompetitif tanpa mengorbankan kualitas dan performa.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end flex items-center justify-center">
+                                            <i class="fas fa-check text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold mb-1">Layanan Purna Jual Terbaik</h4>
+                                        <p class="text-gray-600 text-sm">Gratis perawatan dan update selama 1 tahun penuh untuk memastikan website Anda selalu optimal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <p class="text-base">Percayakan kebutuhan digital Anda kepada tim profesional kami yang siap membantu mengembangkan bisnis Anda di era digital.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-1 lg:order-2" data-aos="fade-left">
+                        <div class="relative h-full flex flex-col justify-center">
+                            <div class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-gradient-start to-gradient-end rounded-full opacity-20 blur-xl"></div>
+                            <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-r from-gradient-start to-gradient-end rounded-full opacity-20 blur-xl"></div>
+                            
+                            <div class="relative bg-white p-2 rounded-2xl shadow-xl">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Team Working" class="rounded-xl w-full h-auto">
+                            </div>
+                            
+                            <div class="absolute -bottom-4 -right-4 bg-gradient-to-r from-gradient-start to-gradient-end text-white p-4 rounded-xl shadow-lg max-w-xs">
+                                <div class="flex items-center">
+                                    <div class="text-3xl font-bold mr-2">500+</div>
+                                    <div>Proyek Selesai</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="text-5xl text-gradient-start mb-4">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Berpengalaman</h3>
+                        <p class="text-gray-600">Lebih dari 8 tahun pengalaman di industri digital</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="text-5xl text-gradient-start mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Tim Profesional</h3>
+                        <p class="text-gray-600">Didukung oleh tim ahli di bidangnya masing-masing</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="text-5xl text-gradient-start mb-4">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Terpercaya</h3>
+                        <p class="text-gray-600">Ratusan klien telah mempercayakan proyek mereka kepada kami</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gradient-start mb-12 text-center" data-aos="fade-up">Keahlian Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-4xl text-gradient-start mb-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">SEO Marketing</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
+                        <div class="bg-gradient-start h-3 rounded-full animate-pulse" style="width: 85%"></div>
+                    </div>
+                    <p class="text-right font-medium">85%</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-4xl text-gradient-start mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Web Desain</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
+                        <div class="bg-gradient-start h-3 rounded-full animate-pulse" style="width: 80%"></div>
+                    </div>
+                    <p class="text-right font-medium">80%</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-4xl text-gradient-start mb-4">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Kelola Sosial Media</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
+                        <div class="bg-gradient-start h-3 rounded-full animate-pulse" style="width: 85%"></div>
+                    </div>
+                    <p class="text-right font-medium">85%</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-4xl text-gradient-start mb-4">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">CCTV</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
+                        <div class="bg-gradient-start h-3 rounded-full animate-pulse" style="width: 90%"></div>
+                    </div>
+                    <p class="text-right font-medium">90%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-16 bg-gradient-to-br from-light to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gradient-start mb-12 text-center" data-aos="fade-up">Layanan Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl text-gradient-start mb-6">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gradient-start mb-3">SEO Marketing</h3>
+                    <p>Melayani Jasa SEO di Pekanbaru sebagai media pemasaran online yang optimal di era digital sekarang ini</p>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="SEO Marketing" class="mt-4 rounded-lg">
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl text-gradient-start mb-6">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gradient-start mb-3">Web Development</h3>
+                    <p>Pembuatan website di sesuaikan dengan kebutuhan anda</p>
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Web Development" class="mt-4 rounded-lg">
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl text-gradient-start mb-6">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gradient-start mb-3">UI/UX Design</h3>
+                    <p>Kami berupaya menjadikan situs dan aplikasi yang kami bangun mudah di gunakan oleh anda</p>
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="UI/UX Design" class="mt-4 rounded-lg">
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-5xl text-gradient-start mb-6">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gradient-start mb-3">Kelola Sosial Media</h3>
+                    <p>Layanan manajemen sosial media untuk meningkatkan engagement dan brand awareness</p>
+                    <img src="https://images.unsplash.com/photo-1611926653458-09294a3e5c39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Social Media Management" class="mt-4 rounded-lg">
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-5xl text-gradient-start mb-6">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gradient-start mb-3">Mobile App</h3>
+                    <p>Pengembangan aplikasi mobile untuk Android dan iOS dengan performa terbaik</p>
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Mobile App Development" class="mt-4 rounded-lg">
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-5xl text-gradient-start mb-6">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gradient-start mb-3">Cloud Hosting</h3>
+                    <p>Sudah saatnya situs di aplikasi di letakkan di server cloud, agar aman data anda</p>
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Cloud Hosting" class="mt-4 rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="tim" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gradient-start mb-12 text-center" data-aos="fade-up">Tim Profesional Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold text-gradient-start mb-2">Edi Purwanto</h3>
+                    <p class="text-gradient-start mb-3">CEO & Founder</p>
+                    <p class="text-gray-600">Berpengalaman lebih dari 10 tahun di bidang web development dan digital marketing</p>
+                    <div class="flex justify-center space-x-3 mt-4">
+                        <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold text-gradient-start mb-2">Siti Nurhaliza</h3>
+                    <p class="text-gradient-start mb-3">Head of Design</p>
+                    <p class="text-gray-600">Spesialis dalam UI/UX design dengan portofolio lebih dari 100 proyek desain</p>
+                    <div class="flex justify-center space-x-3 mt-4">
+                        <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold text-gradient-start mb-2">Budi Santoso</h3>
+                    <p class="text-gradient-start mb-3">Technical Lead</p>
+                    <p class="text-gray-600">Ahli dalam pengembangan aplikasi web dan manajemen server dengan sertifikasi internasional</p>
+                    <div class="flex justify-center space-x-3 mt-4">
+                        <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hidden Team Members Section -->
+            <div class="text-center mb-8">
+                <button id="toggle-team" class="bg-gradient-to-r from-gradient-start to-gradient-end text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity transform hover:-translate-y-1 active:translate-y-0 inline-flex items-center">
+                    <span id="toggle-text">Lihat Tim Lainnya</span>
+                    <i id="toggle-icon" class="fas fa-chevron-down ml-2"></i>
+                </button>
+            </div>
+            
+            <div id="hidden-team" class="hidden">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-xl font-semibold text-gradient-start mb-2">Rina Wijaya</h3>
+                        <p class="text-gradient-start mb-3">Marketing Manager</p>
+                        <p class="text-gray-600">Ahli strategi digital marketing dengan pengalaman di berbagai industri</p>
+                        <div class="flex justify-center space-x-3 mt-4">
+                            <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-xl font-semibold text-gradient-start mb-2">Andi Pratama</h3>
+                        <p class="text-gradient-start mb-3">Mobile Developer</p>
+                        <p class="text-gray-600">Spesialis pengembangan aplikasi Android dan iOS dengan teknologi terkini</p>
+                        <div class="flex justify-center space-x-3 mt-4">
+                            <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-xl font-semibold text-gradient-start mb-2">Maya Sari</h3>
+                        <p class="text-gradient-start mb-3">Content Specialist</p>
+                        <p class="text-gray-600">Ahli pembuatan konten digital dan strategi media sosial untuk berbagai platform</p>
+                        <div class="flex justify-center space-x-3 mt-4">
+                            <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class="text-gradient-start hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-16 bg-gradient-to-br from-light to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gradient-start mb-12 text-center" data-aos="fade-up">Hubungi Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold text-gradient-start mb-6">Informasi Kontak</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-gradient-start text-xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Lokasi</h4>
+                                <p>Jalan Soebrantas No 188 Pekanbaru</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-gradient-start text-xl mr-4 mt-1">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Jam Kerja</h4>
+                                <p>08:00 AM – 05.00 PM</p>
+                                <p>Senin – Jumat</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-gradient-start text-xl mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Telepon</h4>
+                                <p>085210832769</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-gradient-start text-xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p>admin@jasawebpekanbaru.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold text-gradient-start mb-6">Kirim Pesan via WhatsApp</h3>
+                    <form id="whatsapp-form">
+                        <div class="mb-4">
+                            <input type="text" id="nama" placeholder="Nama Anda" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gradient-start" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" id="email" placeholder="Email Anda" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gradient-start" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" id="subjek" placeholder="Subjek" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gradient-start" required>
+                        </div>
+                        <div class="mb-6">
+                            <textarea id="pesan" placeholder="Pesan Anda" rows="4" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gradient-start" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-gradient-to-r from-gradient-start to-gradient-end text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity transform hover:-translate-y-1 active:translate-y-0 w-full flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                            Kirim via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-dark to-gradient-end text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-globe mr-2"></i>
+                        Jasa Web Pekanbaru
+                    </h3>
+                    <p class="text-gray-200">Penyedia jasa pembuatan website profesional di Pekanbaru dengan pengalaman lebih dari 8 tahun.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#layanan" class="text-gray-200 hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="#layanan" class="text-gray-200 hover:text-white transition-colors">UI/UX Design</a></li>
+                        <li><a href="#layanan" class="text-gray-200 hover:text-white transition-colors">SEO Marketing</a></li>
+                        <li><a href="#layanan" class="text-gray-200 hover:text-white transition-colors">Cloud Hosting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Link Terkait</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.pusatgensetpekanbaru.com/" target="_blank" class="text-gray-200 hover:text-white transition-colors">Sewa Genset Pekanbaru</a></li>
+                        <li><a href="https://jasawebpekanbaru.com/sewa-jas-pekanbaru" target="_blank" class="text-gray-200 hover:text-white transition-colors">Sewa Jas Pekanbaru</a></li>
+                        <li><a href="https://jasawebpekanbaru.com/pasang-cctv-pekanbaru" target="_blank" class="text-gray-200 hover:text-white transition-colors">Pasang CCTV Pekanbaru</a></li>
+                        <li><a href="https://jasawebpekanbaru.com/mesin-kasir-pekanbaru" target="_blank" class="text-gray-200 hover:text-white transition-colors">Mesin Kasir Pekanbaru</a></li>
+                        <li><a href="https://www.kursusmengemudipekanbaru.com/" target="_blank" class="text-gray-200 hover:text-white transition-colors">Kursus Mengemudi Pekanbaru</a></li>
+                        <li><a href="https://www.karanganbungapekanbaru.com/" target="_blank" class="text-gray-200 hover:text-white transition-colors">Papan Bunga Pekanbaru</a></li>
+                        <li><a href="https://jasawebpekanbaru.com/sewa-molen-pekanbaru" target="_blank" class="text-gray-200 hover:text-white transition-colors">Sewa Molen Pekanbaru</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Ikuti Kami</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-200 hover:text-white transition-colors text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-200 hover:text-white transition-colors text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-200 hover:text-white transition-colors text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-200 hover:text-white transition-colors text-xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p class="text-gray-200">admin@jasawebpekanbaru.com</p>
+                    <p class="text-gray-200">085210832769</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Jasa Web Pekanbaru. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add active class to navigation items on scroll
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('text-gradient-start');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('text-gradient-start');
+                }
+            });
+        });
+
+        // WhatsApp form submission
+        document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const subjek = document.getElementById('subjek').value;
+            const pesan = document.getElementById('pesan').value;
+            
+            const whatsappMessage = `Halo Jasa Web Pekanbaru, saya ingin mengirim pesan:%0A%0ANama: ${nama}%0AEmail: ${email}%0ASubjek: ${subjek}%0APesan: ${pesan}`;
+            
+            const whatsappUrl = `https://wa.me/6285210832769?text=${whatsappMessage}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+
+        // Toggle team members
+        document.getElementById('toggle-team').addEventListener('click', function() {
+            const hiddenTeam = document.getElementById('hidden-team');
+            const toggleText = document.getElementById('toggle-text');
+            const toggleIcon = document.getElementById('toggle-icon');
+            
+            if (hiddenTeam.classList.contains('hidden')) {
+                hiddenTeam.classList.remove('hidden');
+                toggleText.textContent = 'Sembunyikan Tim Lainnya';
+                toggleIcon.classList.remove('fa-chevron-down');
+                toggleIcon.classList.add('fa-chevron-up');
+                
+                // Reinitialize AOS for newly visible elements
+                AOS.refresh();
+            } else {
+                hiddenTeam.classList.add('hidden');
+                toggleText.textContent = 'Lihat Tim Lainnya';
+                toggleIcon.classList.remove('fa-chevron-up');
+                toggleIcon.classList.add('fa-chevron-down');
+            }
+        });
+    </script>
+</body>
+</html>
