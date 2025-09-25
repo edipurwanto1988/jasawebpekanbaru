@@ -637,6 +637,39 @@
             .whatsapp-icon {
                 font-size: 24px;
             }
+            
+            /* Fix horizontal scrolling issue */
+            html, body {
+                overflow-x: hidden;
+                width: 100%;
+            }
+            
+            /* Ensure mobile menu stays visible */
+            #mobile-menu {
+                position: relative;
+                z-index: 40;
+                background-color: inherit;
+            }
+            
+            /* Make sure container doesn't overflow */
+            .container {
+                max-width: 100%;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                overflow: hidden;
+            }
+            
+            /* Fix for images that might overflow */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            /* Ensure sections don't overflow horizontally */
+            section {
+                width: 100%;
+                overflow-x: hidden;
+            }
         }
     </style>
 
