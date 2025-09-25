@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solusi mesin kasir modern untuk usaha Anda di Pekanbaru. Desain ergonomis, software POS terbaru, garansi resmi, dan layanan purna jual.">
+    <meta name="keywords" content="mesin kasir Pekanbaru, POS system, kasir Android, kasir touchscreen, mesin kasir portable, printer struk, scanner barcode">
+    <meta name="author" content="Mesin Kasir Pekanbaru">
+    <meta name="google-site-verification" content="dsln9e54cWBdDCSDkAF2sfeLZmIiWDJ_bVulBCj4Nno">
+    <title>Mesin Kasir Modern Pekanbaru | Solusi POS untuk Bisnis Anda</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mesin Kasir Modern Pekanbaru | Solusi POS untuk Bisnis Anda">
+    <meta property="og:description" content="Solusi mesin kasir modern untuk usaha Anda di Pekanbaru. Desain ergonomis, software POS terbaru, garansi resmi, dan layanan purna jual.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mesinkasirpekanbaru.com/mesin-kasir-pekanbaru/">
+    <meta property="og:image" content="https://jasawebpekanbaru.com/mesin-kasir-pekanbaru/images/header.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Mesin Kasir Modern Pekanbaru">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mesin Kasir Modern Pekanbaru | Solusi POS untuk Bisnis Anda">
+    <meta name="twitter:description" content="Solusi mesin kasir modern untuk usaha Anda di Pekanbaru. Desain ergonomis, software POS terbaru, garansi resmi, dan layanan purna jual.">
+    <meta name="twitter:image" content="https://jasawebpekanbaru.com/mesin-kasir-pekanbaru/images/header.jpeg">
+    <meta name="twitter:image:alt" content="Mesin Kasir Modern Pekanbaru">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a73e8',
+                        secondary: '#34a853',
+                        accent: '#fbbc04',
+                        dark: '#202124',
+                        light: '#f8f9fa',
+                        text: '#5f6368',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mesin Kasir Pekanbaru",
+      "image": "https://jasawebpekanbaru.com/mesin-kasir-pekanbaru/images/header.jpeg",
+      "@id": "https://mesinkasirpekanbaru.com",
+      "url": "https://mesinkasirpekanbaru.com",
+      "telephone": "+6285210832769",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jln Soebrantas No 188 Panam",
+        "addressLocality": "Pekanbaru",
+        "addressRegion": "Riau",
+        "postalCode": "28111",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 0.507068,
+        "longitude": 101.447779
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/mesinkasirpekanbaru",
+        "https://www.facebook.com/mesinkasirpekanbaru"
+      ]
+    }
+    </script>
+</head>
+<body class="font-poppins">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <nav class="navbar">
+            <div class="container mx-auto px-5 py-4 flex justify-between items-center">
+                <div class="logo">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="images/logo.png" alt="Mesin Kasir Pekanbaru Logo" class="h-10 w-auto">
+                        <span class="text-primary font-bold text-xl">Mesin Kasir Pekanbaru</span>
+                    </a>
+                </div>
+                <div class="nav-toggle md:hidden flex flex-col justify-between w-7 h-6 cursor-pointer" id="navToggle">
+                    <span class="bar block h-0.5 w-full bg-dark transition-all duration-300"></span>
+                    <span class="bar block h-0.5 w-full bg-dark transition-all duration-300"></span>
+                    <span class="bar block h-0.5 w-full bg-dark transition-all duration-300"></span>
+                </div>
+                <ul class="nav-menu hidden md:flex space-x-7 ml-auto" id="navMenu">
+                    <li><a href="#keunggulan" class="text-text font-medium hover:text-primary transition-colors">Keunggulan</a></li>
+                    <li><a href="#pekanbaru" class="text-text font-medium hover:text-primary transition-colors">Kenapa Pekanbaru</a></li>
+                    <li><a href="#jenis-mesin" class="text-text font-medium hover:text-primary transition-colors">Jenis Mesin</a></li>
+                    <li><a href="#testimoni" class="text-text font-medium hover:text-primary transition-colors">Testimoni</a></li>
+                    <li><a href="#harga" class="text-text font-medium hover:text-primary transition-colors">Harga</a></li>
+                    <li><a href="#faq" class="text-text font-medium hover:text-primary transition-colors">FAQ</a></li>
+                    <li><a href="#kontak" class="cta-button bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-blue-700 transition-colors">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero bg-gradient-to-r from-blue-50 to-indigo-100 pt-40 pb-20 mt-16">
+        <div class="container mx-auto px-5 flex flex-col md:flex-row items-center justify-between">
+            <div class="hero-content md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">Solusi Mesin Kasir Modern untuk Usaha Anda di Pekanbaru</h1>
+                <p class="subheadline text-lg text-text mb-8">Cepat, mudah, dan efisien - tingkatkan produktivitas bisnis Anda dengan sistem kasir terkini</p>
+                <div class="hero-buttons flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/6285210832769?text=Halo,%20saya%20tertarik%20dengan%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-primary bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors text-center" target="_blank">Pesan Sekarang</a>
+                    <a href="https://wa.me/6285210832769?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20tentang%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-secondary bg-secondary text-white px-6 py-3 rounded-md font-medium hover:bg-green-700 transition-colors text-center" target="_blank">Konsultasi Gratis</a>
+                </div>
+            </div>
+            <div class="hero-image md:w-1/2">
+                <img src="images/header.jpeg" alt="Mesin Kasir Modern" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Produk -->
+    <section id="keunggulan" class="features bg-light py-20">
+        <div class="container mx-auto px-5">
+            <h2 class="text-3xl font-bold text-dark text-center mb-12 relative">Keunggulan Produk Kami</h2>
+            <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-item bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+                    <div class="feature-icon text-4xl text-primary mb-4">
+                        <i class="fas fa-laptop">&nbsp;</i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Desain Modern dan Ergonomis</h3>
+                    <p class="text-text">Desain yang stylish dan nyaman digunakan, meningkatkan pengalaman kerja kasir Anda.</p>
+                </div>
+                <div class="feature-item bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+                    <div class="feature-icon text-4xl text-primary mb-4">
+                        <i class="fas fa-software">&nbsp;</i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Support Software POS Terbaru</h3>
+                    <p class="text-text">Kompatibel dengan software POS terkini yang memudahkan manajemen inventaris dan penjualan.</p>
+                </div>
+                <div class="feature-item bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+                    <div class="feature-icon text-4xl text-primary mb-4">
+                        <i class="fas fa-shield-alt">&nbsp;</i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Garansi Resmi & Layanan Purna Jual</h3>
+                    <p class="text-text">Garansi resmi dan layanan purna jual di Pekanbaru untuk ketenangan bisnis Anda.</p>
+                </div>
+                <div class="feature-item bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+                    <div class="feature-icon text-4xl text-primary mb-4">
+                        <i class="fas fa-clock">&nbsp;</i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Hemat Waktu Transaksi</h3>
+                    <p class="text-text">Pencatatan keuangan otomatis yang menghemat waktu dan mengurangi kesalahan manusia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kenapa Harus di Pekanbaru -->
+    <section id="pekanbaru" class="pekanbaru py-20">
+        <div class="container mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="pekanbaru-content md:w-1/2">
+                <h2 class="text-3xl font-bold text-dark mb-4">Kenapa Harus di Pekanbaru?</h2>
+                <p class="text-text mb-6">Kami hadir langsung di Pekanbaru, siap antar dan pasang di lokasi bisnis Anda. Layanan lokal dengan kualitas terbaik untuk mendukung pertumbuhan usaha Anda. Kami juga melayani seluruh wilayah Riau.</p>
+                
+                <h3 class="text-xl font-semibold text-dark mb-4">Area Layanan Kami di Pekanbaru:</h3>
+                <div class="service-areas mb-6">
+                    <ul class="flex flex-wrap gap-3 justify-center md:justify-start">
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Sukajadi</li>
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Tampan</li>
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Marpoyan Damai</li>
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Payung Sekaki</li>
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Rumbai</li>
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Bukit Raya</li>
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Senapelan</li>
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Lima Puluh</li>
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Kulim</li>
+                        <li class="bg-light text-primary px-4 py-2 rounded-full font-medium">Tenayan Raya</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="pekanbaru-image md:w-1/2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6876408710023!2d101.39614447496461!3d0.4637307995317261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a9bc86b4b417%3A0x94e290673138bc58!2sGaruda%20Cyber%20Indonesia!5e0!3m2!1sen!2sid!4v1758808832604!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-lg w-full"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jenis Mesin Kasir -->
+    <section id="jenis-mesin" class="products bg-light py-20">
+        <div class="container mx-auto px-5">
+            <h2 class="text-3xl font-bold text-dark text-center mb-12 relative">Jenis Mesin Kasir</h2>
+            <div class="products-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="product-item bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+                    <div class="product-image h-48 overflow-hidden">
+                        <img src="images/kasir00003.jpeg" alt="Mesin Kasir Android" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-dark mb-2">Mesin Kasir Android</h3>
+                        <p class="text-text mb-4">Sistem operasi Android yang user-friendly dengan berbagai aplikasi kasir yang dapat disesuaikan dengan kebutuhan bisnis Anda.</p>
+                        <a href="https://wa.me/6285210832769?text=Halo,%20saya%20ingin%20tahu%20lebih%20detail%20tentang%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-outline border-2 border-primary text-primary px-4 py-2 rounded-md font-medium hover:bg-primary hover:text-white transition-colors inline-block" target="_blank">Info Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="product-item bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+                    <div class="product-image h-48 overflow-hidden">
+                        <img src="images/kasir00002.png" alt="Mesin Kasir Komputer" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-dark mb-2">Mesin Kasir Komputer</h3>
+                        <p class="text-text mb-4">Sistem kasir komputer lengkap dengan monitor, CPU, dan periferal. Solusi ideal untuk bisnis dengan volume transaksi tinggi.</p>
+                        <a href="https://wa.me/6285210832769?text=Halo,%20saya%20ingin%20tahu%20lebih%20detail%20tentang%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-outline border-2 border-primary text-primary px-4 py-2 rounded-md font-medium hover:bg-primary hover:text-white transition-colors inline-block" target="_blank">Info Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="product-item bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+                    <div class="product-image h-48 overflow-hidden">
+                        <img src="images/kasir00001.png" alt="Mesin Kasir Portable" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-dark mb-2">Mesin Kasir Portable</h3>
+                        <p class="text-text mb-4">Solusi kasir mobile yang dapat dibawa kemana saja. Ideal untuk bisnis food truck, bazaar, atau usaha dengan lokasi berpindah.</p>
+                        <a href="https://wa.me/6285210832769?text=Halo,%20saya%20ingin%20tahu%20lebih%20detail%20tentang%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-outline border-2 border-primary text-primary px-4 py-2 rounded-md font-medium hover:bg-primary hover:text-white transition-colors inline-block" target="_blank">Info Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Pelanggan -->
+    <section id="testimoni" class="testimonials py-20 bg-gradient-to-r from-blue-50 to-indigo-100">
+        <div class="container mx-auto px-5">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Apa Kata Pelanggan Kami?</h2>
+                <p class="text-lg text-text max-w-2xl mx-auto">Kepuasan pelanggan adalah prioritas utama kami. Dengarkan pengalaman mereka setelah menggunakan mesin kasir dari kami.</p>
+            </div>
+            
+            <div class="testimonials-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white rounded-xl shadow-lg p-8 transform transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-primary text-white px-4 py-1 rounded-bl-lg text-sm font-semibold">
+                        Restoran
+                    </div>
+                    <div class="testimonial-quote text-5xl text-primary opacity-20 absolute top-4 left-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-content mt-8 mb-6">
+                        <p class="text-text italic text-lg">"Mesin kasir dari Mesin Kasir Pekanbaru sangat membantu usaha restoran saya. Transaksi jadi lebih cepat dan pencatatan keuangan otomatis. Sangat direkomendasikan!"</p>
+                    </div>
+                    <div class="rating text-accent mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-author flex items-center gap-4">
+                        <img src="images/laki-laki.png" alt="Budi Santoso" class="rounded-full w-16 h-16 object-cover border-4 border-light">
+                        <div>
+                            <h4 class="font-bold text-dark text-lg">Budi Santoso</h4>
+                            <p class="text-text">Pemilik Restoran Sederhana</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-white rounded-xl shadow-lg p-8 transform transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-secondary text-white px-4 py-1 rounded-bl-lg text-sm font-semibold">
+                        Retail
+                    </div>
+                    <div class="testimonial-quote text-5xl text-secondary opacity-20 absolute top-4 left-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-content mt-8 mb-6">
+                        <p class="text-text italic text-lg">"Pelayanan sangat memuaskan! Timnya datang langsung ke toko saya di Sukajadi untuk instalasi dan training. Sekarang proses kasir toko retail saya jauh lebih efisien."</p>
+                    </div>
+                    <div class="rating text-accent mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-author flex items-center gap-4">
+                        <img src="images/perempuan.png" alt="Siti Aminah" class="rounded-full w-16 h-16 object-cover border-4 border-light">
+                        <div>
+                            <h4 class="font-bold text-dark text-lg">Siti Aminah</h4>
+                            <p class="text-text">Pemilik Toko Kelontong</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-white rounded-xl shadow-lg p-8 transform transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-accent text-white px-4 py-1 rounded-bl-lg text-sm font-semibold">
+                        Cafe
+                    </div>
+                    <div class="testimonial-quote text-5xl text-accent opacity-20 absolute top-4 left-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-content mt-8 mb-6">
+                        <p class="text-text italic text-lg">"Sebagai pemula di bisnis cafe, mesin kasir ini sangat membantu. Harganya terjangkau dan fiturnya lengkap. Terima kasih Mesin Kasir Pekanbaru!"</p>
+                    </div>
+                    <div class="rating text-accent mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-author flex items-center gap-4">
+                        <img src="images/laki-laki.png" alt="Ahmad Fauzi" class="rounded-full w-16 h-16 object-cover border-4 border-light">
+                        <div>
+                            <h4 class="font-bold text-dark text-lg">Ahmad Fauzi</h4>
+                            <p class="text-text">Pemilik Kafe Kekinian</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://wa.me/6285210832769?text=Halo,%20saya%20tertarik%20dengan%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-primary bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2" target="_blank">
+                    <i class="fas fa-comments"></i> Bergabunglah dengan Ratusan Pelanggan Puas Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harga & Paket -->
+    <section id="harga" class="pricing bg-light py-20">
+        <div class="container mx-auto px-5">
+            <h2 class="text-3xl font-bold text-dark text-center mb-4 relative">Harga & Paket</h2>
+            <p class="text-center text-text mb-8">*Ini adalah harga per 25 September 2025, Harga sewaktu waktu bisa berubah</p>
+            <div class="pricing-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="pricing-item bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+                    <h3 class="text-xl font-semibold text-dark mb-2">Paket Hemat</h3>
+                    <p class="pricing-subtitle text-text mb-4">Tanpa Laci Kasir</p>
+                    <div class="price mb-6">
+                        <span class="currency text-lg">Rp</span>
+                        <span class="amount text-3xl font-bold text-primary">6.829.000</span>
+                    </div>
+                    <ul class="pricing-features text-left mb-8">
+                        <li class="py-2 border-b border-gray-100">Aplikasi Kasir</li>
+                        <li class="py-2 border-b border-gray-100">1 Set Komputer (Monitor Varo 16inc, SSD 120GB, Ram 4GB, Processor core i3 gen 4)</li>
+                        <li class="py-2 border-b border-gray-100">Scanner Iware 1D</li>
+                        <li class="py-2">Printer Struk Thermal 58mm</li>
+                    </ul>
+                    <a href="https://wa.me/6285210832769?text=Halo,%20saya%20tertarik%20dengan%20paket%20hemat%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-outline border-2 border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-primary hover:text-white transition-colors inline-block" target="_blank">Pilih Paket</a>
+                </div>
+                <div class="pricing-item bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-2 border-2 border-primary relative">
+                    <div class="featured-badge absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">Best Seller</div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Paket Best Seller</h3>
+                    <p class="pricing-subtitle text-text mb-4">Paling Laku</p>
+                    <div class="price mb-6">
+                        <span class="currency text-lg">Rp</span>
+                        <span class="amount text-3xl font-bold text-primary">7.799.000</span>
+                    </div>
+                    <ul class="pricing-features text-left mb-8">
+                        <li class="py-2 border-b border-gray-100">Aplikasi Kasir</li>
+                        <li class="py-2 border-b border-gray-100">1 Set Komputer (Monitor Samsung/LG 19 inc, SSD 120GB, Ram 4GB, Processor core i3 gen 4)</li>
+                        <li class="py-2 border-b border-gray-100">Scanner Iware 1D</li>
+                        <li class="py-2 border-b border-gray-100">Printer Struk Thermal 58mm</li>
+                        <li class="py-2">Laci Kasir</li>
+                    </ul>
+                    <a href="https://wa.me/6285210832769?text=Halo,%20saya%20tertarik%20dengan%20paket%20best%20seller%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-primary bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors inline-block" target="_blank">Pilih Paket</a>
+                </div>
+                <div class="pricing-item bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+                    <h3 class="text-xl font-semibold text-dark mb-2">Paket Pro</h3>
+                    <p class="pricing-subtitle text-text mb-4">Support Online</p>
+                    <div class="price mb-6">
+                        <span class="currency text-lg">Rp</span>
+                        <span class="amount text-3xl font-bold text-primary">8.189.000</span>
+                    </div>
+                    <ul class="pricing-features text-left mb-8">
+                        <li class="py-2 border-b border-gray-100">Aplikasi Kasir Support Online</li>
+                        <li class="py-2 border-b border-gray-100">1 Set Komputer (Monitor Samsung/LG 19 inc, SSD 120GB, Ram 4GB, Processor core i3 gen 4)</li>
+                        <li class="py-2 border-b border-gray-100">Scanner Omni duduk 2D</li>
+                        <li class="py-2 border-b border-gray-100">Printer Struk Thermal 58mm</li>
+                        <li class="py-2">Laci Kasir</li>
+                    </ul>
+                    <a href="https://wa.me/6285210832769?text=Halo,%20saya%20tertarik%20dengan%20paket%20pro%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-outline border-2 border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-primary hover:text-white transition-colors inline-block" target="_blank">Pilih Paket</a>
+                </div>
+            </div>
+            <div class="pricing-cta text-center mt-12">
+                <p class="text-text mb-4">Butuh paket custom untuk bisnis Anda?</p>
+                <a href="https://wa.me/6285210832769?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20tentang%20paket%20custom%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-secondary bg-secondary text-white px-6 py-3 rounded-md font-medium hover:bg-green-700 transition-colors inline-block" target="_blank">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (Pertanyaan Umum) -->
+    <section id="faq" class="faq py-20 bg-light">
+        <div class="container mx-auto px-5">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Pertanyaan yang Sering Diajukan</h2>
+                <p class="text-lg text-text max-w-2xl mx-auto">Temukan jawaban untuk pertanyaan umum tentang mesin kasir dan layanan kami.</p>
+            </div>
+            
+            <div class="faq-list max-w-3xl mx-auto">
+                <div class="faq-item bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-semibold text-dark">1. Apakah bisa COD di Pekanbaru?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-text">Ya, kami melayani pembayaran COD (Cash On Delivery) untuk area Pekanbaru dan sekitarnya. Tim kami akan datang ke lokasi Anda untuk proses pembayaran dan instalasi.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-semibold text-dark">2. Apakah ada training penggunaan mesin?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-text">Tentu saja! Setiap pembelian mesin kasir sudah termasuk training penggunaan oleh tim profesional kami. Kami akan memastikan Anda dan staf bisa mengoperasikan mesin dengan baik.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-semibold text-dark">3. Bagaimana garansi & service?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-text">Kami memberikan garansi resmi 1 Tahun. Untuk layanan service, tim teknisi kami siap datang ke lokasi Anda di Pekanbaru untuk perbaikan dan maintenance.</p>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="faq-item bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-semibold text-dark">4. Apakah bisa dipakai untuk usaha laundry / minimarket / restoran?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-text">Tentu bisa! Mesin kasir kami sangat fleksibel dan dapat disesuaikan untuk berbagai jenis usaha. Kami memiliki software POS yang dapat dikustomisasi sesuai kebutuhan spesifik bisnis Anda.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-semibold text-dark">5. Apakah Mesin Kasir Pekanbaru melayani area Riau?</h3>
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 border-t border-gray-100">
+                        <p class="text-text mb-3">Ya, kami melayani seluruh area Riau. Berikut adalah daerah layanan kami:</p>
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Bengkalis:</h4>
+                                <p class="text-text">Bantan, Bengkalis, Bukit Batu, Mandau, Rupat, Rupat Utara, Siak Kecil, Bandar Laksamana, Bathin Solapan</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Indragiri Hilir (Inhil):</h4>
+                                <p class="text-text">Batang Tuaka, Concong, Enok, Gaung, Gaung Anak Serka, Kateman, Kempas, Kemuning, Keritang, Kuala Indragiri, Mandah, Pelangiran, Reteh, Sungai Batang, Tanah Merah, Teluk Belengkong, Tembilahan, Tembilahan Hulu, Tempuling</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Indragiri Hulu (Inhu):</h4>
+                                <p class="text-text">Batang Cenaku, Batang Gansal, Batang Peranap, Kelayang, Kuala Cenaku, Lirik, Lubuk Batu Jaya, Pasir Penyu, Peranap, Rakit Kulim, Rengat, Rengat Barat, Seberida, Sungai Lala</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Kampar:</h4>
+                                <p class="text-text">Bangkinang, Bangkinang Kota, Gunung Sahilan, Kampar, Kampar Kiri, Kampar Kiri Hilir, Kampar Kiri Hulu, Kampar Kiri Tengah, Kampar Timur, Kampar Utara, Koto Kampar Hulu, Kuok, Perhentian Raja, Rumbio Jaya, Salo, Siak Hulu, Tapung, Tapung Hilir, Tapung Hulu, Tambang, XIII Koto Kampar</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Kepulauan Meranti:</h4>
+                                <p class="text-text">Merbau, Pulau Merbau, Rangsang, Rangsang Barat, Rangsang Pesisir, Tebing Tinggi, Tebing Tinggi Barat, Tebing Tinggi Timur</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Kuantan Singingi (Kuansing):</h4>
+                                <p class="text-text">Benai, Cerenti, Gunung Toar, Hulu Kuantan, Inuman, Kuantan Hilir, Kuantan Hilir Seberang, Kuantan Mudik, Kuantan Tengah, Logas Tanah Darat, Pangean, Pucuk Rantau, Sentajo Raya, Singingi, Singingi Hilir</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Pelalawan:</h4>
+                                <p class="text-text">Bandar Petalangan, Bandar Sei Kijang, Bunut, Kerumutan, Kuala Kampar, Langgam, Pangkalan Kerinci, Pangkalan Kuras, Pangkalan Lesung, Pelalawan, Teluk Meranti, Ukui</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Rokan Hilir (Rohil):</h4>
+                                <p class="text-text">Bangko, Bangko Pusako, Batu Hampar, Kubu, Kubu Babussalam, Pasir Limau Kapas, Pekaitan, Pujud, Rantau Kopar, Rimba Melintang, Simpang Kanan, Sinaboi, Tanah Putih, Tanah Putih Tanjung Melawan</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Rokan Hulu (Rohul):</h4>
+                                <p class="text-text">Bangun Purba, Bonai Darussalam, Kabun, Kunto Darussalam, Pagaran Tapah Darussalam, Pendalian IV Koto, Rambah, Rambah Hilir, Rambah Samo, Rokan IV Koto, Tambusai, Tambusai Utara, Tandun, Ujung Batu</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kabupaten Siak:</h4>
+                                <p class="text-text">Dayun, Kandis, Kerinci Kanan, Koto Gasib, Lubuk Dalam, Mempura, Minas, Pusako, Sabak Auh, Siak, Sungai Apit, Sungai Mandau, Tualang</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Kota Dumai:</h4>
+                                <p class="text-text">Bukit Kapur, Dumai Barat, Dumai Kota, Dumai Selatan, Dumai Timur, Medang Kampai, Sungai Sembilan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-text mb-4">Masih memiliki pertanyaan lain?</p>
+                <a href="https://wa.me/6285210832769?text=Halo,%20saya%20memiliki%20pertanyaan%20lebih%20lanjut%20tentang%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-primary bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors inline-flex items-center gap-2" target="_blank">
+                    <i class="fas fa-phone-alt"></i> Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            // Toggle the answer visibility
+            answer.classList.toggle('hidden');
+            
+            // Rotate the icon
+            if (answer.classList.contains('hidden')) {
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+
+    <!-- Kontak & CTA Akhir -->
+    <section id="kontak" class="contact bg-gradient-to-r from-primary to-secondary py-20 text-white">
+        <div class="container mx-auto px-5 flex flex-col lg:flex-row items-start justify-between gap-10">
+            <div class="contact-content lg:w-1/2">
+                <h2 class="text-3xl font-bold text-white mb-4 text-left">Siap Tingkatkan Bisnis Anda?</h2>
+                <p class="mb-6">Dapatkan mesin kasir terbaik untuk bisnis Anda di Pekanbaru. Hubungi kami sekarang juga untuk konsultasi gratis!</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item flex items-start gap-4 mb-6">
+                        <div class="contact-icon text-2xl mt-1">
+                            <i class="fab fa-whatsapp">&nbsp;</i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">WhatsApp</h3>
+                            <a href="https://wa.me/6285210832769?text=Halo,%20saya%20tertarik%20dengan%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="whatsapp-link font-semibold text-xl" target="_blank">+62 852-1083-2769</a>
+                        </div>
+                    </div>
+                    <div class="contact-item flex items-start gap-4 mb-6">
+                        <div class="contact-icon text-2xl mt-1">
+                            <i class="fas fa-phone-alt">&nbsp;</i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">Telepon</h3>
+                            <p>0852-1083-2769</p>
+                        </div>
+                    </div>
+                    <div class="contact-item flex items-start gap-4 mb-6">
+                        <div class="contact-icon text-2xl mt-1">
+                            <i class="fas fa-envelope">&nbsp;</i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">Email</h3>
+                            <p>admin@jawawebpekanbaru.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item flex items-start gap-4 mb-6">
+                        <div class="contact-icon text-2xl mt-1">
+                            <i class="fas fa-map-marker-alt">&nbsp;</i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">Alamat</h3>
+                            <p>Jln Soebrantas No 188 Panam, Pekanbaru</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-buttons">
+                    <a href="https://wa.me/6285210832769?text=Halo,%20saya%20tertarik%20dengan%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="btn btn-primary bg-green-500 text-white px-6 py-3 rounded-md font-medium hover:bg-green-600 transition-colors inline-flex items-center gap-2" target="_blank">
+                        <i class="fab fa-whatsapp">&nbsp;</i> Pesan Sekarang via WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-form bg-white p-8 rounded-lg shadow-md lg:w-1/2 text-dark">
+                <h3 class="text-2xl font-bold text-dark mb-6">Form Kontak</h3>
+                <form id="contactForm">
+                    <div class="form-group mb-4">
+                        <label for="name" class="block mb-2 font-medium text-dark">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                    </div>
+                    
+                    <div class="form-group mb-4">
+                        <label for="phone" class="block mb-2 font-medium text-dark">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="business" class="block mb-2 font-medium text-dark">Jenis Bisnis</label>
+                        <select id="business" name="business" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            <option value="">Pilih Jenis Bisnis</option>
+                            <option value="restoran">Restoran/Cafe</option>
+                            <option value="retail">Toko Retail</option>
+                            <option value="minimarket">Minimarket</option>
+                            <option value="laundry">Laundry</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-6">
+                        <label for="message" class="block mb-2 font-medium text-dark">Pesan</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors w-full">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="container mx-auto px-5">
+            <div class="footer-content grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+                <div class="footer-logo">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="images/logo.png" alt="Mesin Kasir Pekanbaru Logo" class="h-12 w-auto">
+                        <h3 class="text-2xl font-bold">Mesin Kasir Pekanbaru</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">Solusi mesin kasir modern untuk bisnis Anda di Pekanbaru.</p>
+                    <div class="social-links flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f">&nbsp;</i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram">&nbsp;</i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <i class="fab fa-youtube">&nbsp;</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="text-xl font-semibold mb-6 relative">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#keunggulan" class="text-gray-300 hover:text-white transition-colors">Keunggulan</a></li>
+                        <li><a href="#pekanbaru" class="text-gray-300 hover:text-white transition-colors">Kenapa Pekanbaru</a></li>
+                        <li><a href="#jenis-mesin" class="text-gray-300 hover:text-white transition-colors">Jenis Mesin</a></li>
+                        <li><a href="#testimoni" class="text-gray-300 hover:text-white transition-colors">Testimoni</a></li>
+                        <li><a href="#harga" class="text-gray-300 hover:text-white transition-colors">Harga</a></li>
+                        <li><a href="#faq" class="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="text-xl font-semibold mb-6 relative">Kontak Kami</h4>
+                    <p class="text-gray-300 mb-4 flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1">&nbsp;</i> Jln Soebrantas No 188 Panam, Pekanbaru</p>
+                    <p class="text-gray-300 mb-4 flex items-start gap-3"><i class="fas fa-phone-alt mt-1">&nbsp;</i> (0761) 12345</p>
+                    <p class="text-gray-300 flex items-start gap-3"><i class="fas fa-envelope mt-1">&nbsp;</i> admin@jawawebpekanbaru.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center pt-6 border-t border-gray-800">
+                <p class="text-gray-400">&copy; 2025 Mesin Kasir Pekanbaru. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285210832769?text=Halo,%20saya%20tertarik%20dengan%20mesin%20kasir%20untuk%20bisnis%20saya%20di%20Pekanbaru" class="whatsapp-float fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50" target="_blank">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    
+    <!-- JavaScript -->
+    <script src="script-tailwind.js"></script>
+</body>
+</html>
