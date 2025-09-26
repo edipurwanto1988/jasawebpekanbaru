@@ -80,4 +80,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    
+    <!-- 404 Error Page -->
+    <url>
+        <loc>https://jasawebpekanbaru.com/404.html</loc>
+        <lastmod>2025-09-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
 </urlset>
