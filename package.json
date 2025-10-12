@@ -1,0 +1,29 @@
+{
+  "name": "jasawebpekanbaru",
+  "version": "1.0.0",
+  "description": "Jasa Web Pekanbaru - Professional Website Development Services",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "build": "echo 'Static site - no build needed'",
+    "deploy:pages": "npx wrangler pages deploy . --project-name=jasawebpekanbaru",
+    "deploy:worker": "npx wrangler deploy",
+    "preview": "npx wrangler dev"
+  },
+  "keywords": [
+    "jasa web pekanbaru",
+    "pembuatan website",
+    "web development",
+    "seo",
+    "digital marketing"
+  ],
+  "author": "Jasa Web Pekanbaru",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.42.2",
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

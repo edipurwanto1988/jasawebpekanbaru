@@ -1,0 +1,23 @@
+name = "jasawebpekanbaru"
+main = "src/index.js"
+compatibility_date = "2025-10-12"
+
+[vars]
+ENVIRONMENT = "production"
+
+# Configure KV namespace for caching if needed
+# [[kv_namespaces]]
+# binding = "STATIC_CACHE"
+# id = "your-kv-namespace-id"
+# preview_id = "your-preview-kv-namespace-id"
+
+# Configure D1 database if needed
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "jasawebpekanbaru-db"
+# database_id = "your-database-id"
+
+# Configure R2 bucket for static assets if needed
+# [[r2_buckets]]
+# binding = "ASSETS"
+# bucket_name = "jasawebpekanbaru-assets"
