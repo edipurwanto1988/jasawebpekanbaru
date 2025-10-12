@@ -82,44 +82,53 @@ async function serveStaticAsset(filename) {
     // Cache might not be available, continue with fetch
   }
 
-  // Get the file from the repository
-  const fileUrl = `https://raw.githubusercontent.com/yourusername/yourrepo/main/${filename}`;
+  // Instead of fetching from GitHub, return a simple HTML response
+  // This is a basic fallback that will at least prevent the Worker from crashing
+  const contentType = mimeTypes[filename.substring(filename.lastIndexOf('.'))] || 'text/html';
   
-  try {
-    const response = await fetch(fileUrl);
+  if (filename === 'index.html' || filename === '404.html') {
+    const htmlContent = filename === 'index.html' ?
+      `<!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jasa Web Pekanbaru</title>
+        <meta name="description" content="Professional website development services in Pekanbaru">
+      </head>
+      <body>
+        <h1>Welcome to Jasa Web Pekanbaru</h1>
+        <p>Professional website development services in Pekanbaru, Indonesia.</p>
+        <p><strong>Note:</strong> This is a fallback page. The website content is being updated.</p>
+      </body>
+      </html>` :
+      `<!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404 - Page Not Found | Jasa Web Pekanbaru</title>
+      </head>
+      <body>
+        <h1>404 - Page Not Found</h1>
+        <p>The page you're looking for doesn't exist.</p>
+        <a href="/">Return to homepage</a>
+      </body>
+      </html>`;
     
-    if (!response.ok) {
-      // If file not found, serve 404 page
-      const notFoundResponse = await fetch('https://raw.githubusercontent.com/yourusername/yourrepo/main/404.html');
-      return new Response(notFoundResponse.body, {
-        status: 404,
-        headers: {
-          'Content-Type': 'text/html',
-          'Cache-Control': 'public, max-age=3600'
-        }
-      });
-    }
-
-    const contentType = mimeTypes[filename.substring(filename.lastIndexOf('.'))] || 'text/html';
-    
-    const responseToCache = new Response(response.body, {
-      status: response.status,
+    const response = new Response(htmlContent, {
+      status: 200,
       headers: {
-        'Content-Type': contentType,
-        'Cache-Control': 'public, max-age=31536000',
-        'X-Content-Type-Options': 'nosniff',
-        'X-Frame-Options': 'DENY',
-        'X-XSS-Protection': '1; mode=block'
+        'Content-Type': 'text/html',
+        'Cache-Control': 'public, max-age=3600'
       }
     });
-
-    // Store in cache for future requests
-    event.waitUntil(cache.put(cacheKey, responseToCache.clone()));
     
-    return responseToCache;
-  } catch (error) {
-    return new Response('Error serving content', { status: 500 });
+    return response;
   }
+  
+  // For other files, return a simple response
+  return new Response('File not available', { status: 404 });
 }
 
 async function serveImage(imagePath) {
@@ -135,30 +144,6 @@ async function serveImage(imagePath) {
     // Cache might not be available, continue with fetch
   }
 
-  const fileUrl = `https://raw.githubusercontent.com/yourusername/yourrepo/main${imagePath}`;
-  
-  try {
-    const response = await fetch(fileUrl);
-    
-    if (!response.ok) {
-      return new Response('Image not found', { status: 404 });
-    }
-
-    const contentType = mimeTypes[imagePath.substring(imagePath.lastIndexOf('.'))] || 'image/jpeg';
-    
-    const responseToCache = new Response(response.body, {
-      status: response.status,
-      headers: {
-        'Content-Type': contentType,
-        'Cache-Control': 'public, max-age=31536000'
-      }
-    });
-
-    // Store in cache for future requests
-    event.waitUntil(cache.put(cacheKey, responseToCache.clone()));
-    
-    return responseToCache;
-  } catch (error) {
-    return new Response('Error serving image', { status: 500 });
-  }
+  // Return a simple placeholder image response
+  return new Response('Image not available', { status: 404 });
 }

@@ -1,6 +1,8 @@
 name = "jasawebpekanbaru"
 main = "src/index.js"
 compatibility_date = "2025-10-12"
+workers_dev = false
+preview_urls = false
 
 # Custom domain configuration
 routes = [
