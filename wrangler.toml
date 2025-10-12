@@ -2,6 +2,12 @@ name = "jasawebpekanbaru"
 main = "src/index.js"
 compatibility_date = "2025-10-12"
 
+# Custom domain configuration
+routes = [
+  { pattern = "jasawebpekanbaru.com/*", zone_name = "jasawebpekanbaru.com" },
+  { pattern = "www.jasawebpekanbaru.com/*", zone_name = "jasawebpekanbaru.com" }
+]
+
 [vars]
 ENVIRONMENT = "production"
 
